@@ -91,7 +91,6 @@ public class LevelScreen extends BaseScreen {
             else // defautl color
                 key.setColor(Color.WHITE);
         }
-
         // Lock
         for (MapObject obj : tma.getTileList("Lock")) {
             MapProperties props = obj.getProperties();
