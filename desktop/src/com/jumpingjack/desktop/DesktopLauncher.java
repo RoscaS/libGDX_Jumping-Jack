@@ -1,8 +1,9 @@
-package com.framework.desktop;
+package com.jumpingjack.desktop;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
-import com.mygame.JumpingJack;
+import com.jumpingjack.JumpingJack;
+
 
 public class DesktopLauncher {
 	public static void main (String[] arg) {

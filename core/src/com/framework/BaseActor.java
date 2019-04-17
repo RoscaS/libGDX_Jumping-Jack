@@ -11,10 +11,8 @@ import com.badlogic.gdx.math.*;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Group;
 import com.badlogic.gdx.scenes.scene2d.Stage;
-import com.badlogic.gdx.utils.viewport.Viewport;
 import com.badlogic.gdx.utils.Array;
-
-import java.util.ArrayList;
+import com.badlogic.gdx.utils.viewport.Viewport;
 
 /**
  * Extends functionality of the LibGDX Actor class.
@@ -30,8 +28,9 @@ public class BaseActor extends Group {
     private float elapsedTime;
 
     // Physics
-    private Vector2 velocityVec;
-    private Vector2 accelerationVec;
+    public Vector2 velocityVec;
+    public Vector2 accelerationVec;
+
     private float acceleration;
     private float deceleration;
     private float maxSpeed;
@@ -75,6 +74,14 @@ public class BaseActor extends Group {
     /*------------------------------*\
    	|*				Getters			*|
    	\*------------------------------*/
+
+    /**
+     * Return simple class name of this Actor.
+     * @return simple class name
+     */
+    public String className() {
+   	    return this.getClass().getCanonicalName();
+       }
 
     /**
      * Get world dimensions
